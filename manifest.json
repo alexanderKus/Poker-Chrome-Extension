@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Poker Timer",
+  "version": "1.0.0",
+  "description": "Poker timer to notify when small and big blind must go up!",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Poker Timer",
+    "default_popup": "popup/popup.html",
+    "default_icon": "popup/icon.png"
+  },
+  "permissions": ["storage","alarms","notifications"],
+  "options_page": "options/options.html"
+}

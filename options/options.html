@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="options.css">
+  <title>Poker Timer Options</title>
+</head>
+<body>
+    <h1>Poker Timer Settings</h1>
+    <div class="settings">
+        <label>
+            Round length (in minutes):
+            <input id="roundLengthSettings" type="number" min="30" max="180" step="5" value="30" />
+        </label>
+        <label>
+            Small blind:
+            <input id="smallBlindSettings" type="number" min="25" max="1000" step="1" value="25" />
+        </label>
+        <label>
+            Big blind:
+            <input id="bigBlindSettings" type="number" min="50" max="1000" step="1" value="50" />
+        </label>
+        <label>
+            Max small blind:
+            <input id="maxSmallBlindSettings" type="number" min="1000" max="10000" step="50" value="1000" />
+        </label>
+        <label>
+            Max big blind:
+            <input id="maxBigBlindSettings" type="number" min="2000" max="20000" step="50" value="2000" />
+        </label>
+        <label>
+            Factor (blind are multiplied by factor every round):
+            <input id="factorSettings" type="number" min="2" max="10" step="1" value="2" />
+        </label>
+        <div id="buttons">
+            <button id="saveBtn">Save</button>
+            <button id="defaultBtn">Default</button>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
