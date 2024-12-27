@@ -11,9 +11,9 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
   ]);
   if (!isRunning) return;
   if (timer === roundLength * 60) {
-    chrome.notifications.create({
-      title: "Time up!",
-      message: "Time up!",
+    const notification = await chrome.notifications.create(`poker-notify-${Date.now()}`, {
+      title: "Poker Timer",
+      message: "Time to raise a blinds!",
       iconUrl: "./popup/icon.png",
       type: "basic",
     });
