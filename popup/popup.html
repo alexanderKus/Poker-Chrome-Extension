@@ -1,25 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="popup.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="popup.css" />
     <title>Poker Timer</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Poker Timer</h1>
     <div class="blinds">
-        <div id="smallBlind">Small blind: <span id="smallBlindValue" class="number">Loading...</span></div>
-        <div id="bigBlind">Big blind: <span id="bigBlindValue" class="number">Loading...</span></div>
+      <div id="smallBlind">
+        Small blind: <span id="smallBlindValue" class="number">Loading...</span>
+      </div>
+      <div id="bigBlind">
+        Big blind: <span id="bigBlindValue" class="number">Loading...</span>
+      </div>
     </div>
     <div>Time: <span id="timer" class="number">Loading...</span></div>
     <div id="buttons">
-        <button id="startBtn">Start</button>
-        <button id="stopBtn">Stop</button>
-        <button id="resetBtn">Reset</button>
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
     </div>
     <script src="popup.js"></script>
-</body>
+  </body>
 </html>
